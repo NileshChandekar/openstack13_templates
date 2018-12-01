@@ -1,0 +1,13 @@
+# A Heat environment file which can be used to enable a
+# a Cinder  HPELeftHandISCSI backend, configured via puppet
+resource_registry:
+  OS::TripleO::Services::CinderHPELeftHandISCSI: /usr/share/openstack-tripleo-heat-templates/puppet/services/cinder-hpelefthand-iscsi.yaml
+
+parameter_defaults:
+  CinderHPELeftHandISCSIApiUrl: 'https://192.168.122.110:8081/lhos'
+  CinderHPELeftHandISCSIUserName: 'hpe'
+  CinderHPELeftHandISCSIPassword: 'hpe12345'
+  CinderHPELeftHandISCSIBackendName: 'tripleo_hpelefthand'
+  CinderHPELeftHandISCSIChapEnabled: false
+  CinderHPELeftHandClusterName: 'hp'
+  CinderHPELeftHandDebug: True

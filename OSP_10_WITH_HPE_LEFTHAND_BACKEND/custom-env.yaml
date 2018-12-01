@@ -1,0 +1,21 @@
+parameter_defaults:
+  # setting the hostname1 parameter to detect that the manual change via postconfig gets applied only to compute nodes 
+  # hostname1: 'Comp'
+  controllerExtraConfig:
+  # 2nd change for cinder backend  
+    cinder::config::cinder_config:    
+        tripleo-lefthand/volume_driver:
+            value: cinder.volume.drivers.san.hp.hp_lefthand_iscsi.HPLeftHandISCSIDriver
+        tripleo-lefthand/volume_backend_name:
+            value: lefthand
+        tripleo-lefthand/hpelefthand_api_url:
+            value: https://10.0.0.71:8081/lhos
+        tripleo-lefthand/hpelefthand_clustername:
+            value: hpcluster          
+        tripleo-lefthand/hpelefthand_username:
+            value: hpe
+        tripleo-lefthand/hpelefthand_password:
+            value: hpe12345
+        tripleo-lefthand/hpelefthand_debug:
+            value: false
+    cinder_user_enabled_backends: tripleo-lefthand

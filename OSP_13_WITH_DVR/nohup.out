@@ -1,0 +1,8 @@
+Waiting for messages on queue 'tripleo' with no timeout.
+environment has wrong section "NeutronL3HA"
+Started Mistral Workflow tripleo.validations.v1.check_pre_deployment_validations. Execution ID: 39595d7e-f0ac-4804-9502-2cccdd064bb9
+Removing the current plan files
+Uploading new plan files
+Started Mistral Workflow tripleo.plan_management.v1.update_deployment_plan. Execution ID: f2b02225-6f02-4bce-9bbb-79ff47f94416
+Plan updated.
+Processing templates in the directory /tmp/tripleoclient-KQdZeQ/tripleo-heat-templates

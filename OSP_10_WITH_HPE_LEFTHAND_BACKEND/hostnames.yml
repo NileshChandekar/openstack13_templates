@@ -1,0 +1,8 @@
+
+parameter_defaults:
+
+    CephStorageHostnameFormat: 'ceph-%index%'
+    ObjectStorageHostnameFormat: 'swift-%index%'
+    ControllerHostnameFormat: 'controller-%index%'
+    ComputeHostnameFormat: 'compute-%index%'
+

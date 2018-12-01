@@ -1,0 +1,1 @@
+openstack overcloud deploy --templates /usr/share/openstack-tripleo-heat-templates -e /usr/share/openstack-tripleo-heat-templates/environments/network-isolation.yaml -e /home/stack/templates/network-environment.yaml -e /home/stack/templates/neutron-ovs-dvr.yaml -e /usr/share/openstack-tripleo-heat-templates/roles_data.yaml --libvirt-type kvm --ntp-server 192.168.24.1
